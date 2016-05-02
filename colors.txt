@@ -1,0 +1,4 @@
+#71ea9c   bright green
+#405067   navy blue
+#fafafa   gray bg
+#626364 fonts
