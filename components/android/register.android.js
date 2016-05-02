@@ -12,6 +12,7 @@ import React, {
     Animated,
     DeviceEventEmitter,
     View,
+    BackAndroid,
     TouchableHighlight,
 } from 'react-native';
 import Loading from './loading.android.js';
@@ -32,6 +33,7 @@ export default class Register extends Component {
 
 
     }
+
 
     componentWillMount() {
   
@@ -83,8 +85,13 @@ export default class Register extends Component {
     }
 
     componentDidMount() {
+        BackAndroid.addEventListener('hardwareBackPress', () => {
+            if (this.props.navigator) {
+                this.props.navigator.pop();
+                return true;
+            } return false;
+        });
         this.setState({loaded: true});
-
     }
     login(){
         this.props.navigator.pop();

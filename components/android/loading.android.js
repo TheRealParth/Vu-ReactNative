@@ -21,14 +21,6 @@ export default class Loading extends Component {
     componentDidMount() {
         // this._animate();
     }
-    // _animate(){
-    //     this.state.angle.setValue(0);
-    //     this._anim = Animated.timing(this.state.angle, {
-    //         toValue: 7200,
-    //         duration: 32000,
-    //         easing: Easing.linear
-    //     }).start(this._animate);
-    // }
 
     render() {
         return (
